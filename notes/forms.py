@@ -12,6 +12,8 @@ class NoteForm(forms.ModelForm):
     """Форма для создания или обновления заметки."""
 
     class Meta:
+        """Class for meta."""
+
         model = Note
         fields = ('title', 'text', 'slug')
 
